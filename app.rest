@@ -1,0 +1,54 @@
+GET http://localhost:3000/user
+
+###
+Post http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name":"lokesh parmar",
+    "description":"i am awesome "
+}
+
+###
+GET http://localhost:3000/user/5daaf4c0e8cda651003c3d10
+
+###
+
+
+PATCH  http://localhost:3000/user/5daae31c8a3cd4186c7ef9bc
+Content-Type: application/json
+
+{
+    "name":"I am the best "
+}
+
+### 
+
+DELETE http://localhost:3000/user/5daae31c8a3cd4186c7ef9bc
+
+
+###
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "username":"lokeshparmar",
+    "password":"12345"
+}
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "username":"Lokesh444",
+    "password":"12qw"
+}
+###
+POST http://localhost:3000/user/signup
+Content-Type: application/json
+
+{
+    "username":"Lokesh444",
+    "password":"12qw",
+    "isAdmin":"thisIsMyCode"
+}
